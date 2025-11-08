@@ -42,6 +42,27 @@ int main() {
         r++;
     } while (r <= casasRainha);
 
+    // Implementação de Movimentação do cavalo
+    // Neste desafio: 2 casas para BAIXO e 1 casa para a ESQUERDA.
+    int casasBaixo = 2;
+    int casasEsquerda = 1;
+
+    printf("\n====Movimento do CAVALO====\n");
+    //Repete BAIXO 2 vezes
+    for (int i = 1; i <= casasBaixo; i++)
+    {
+        printf("Baixo\n");
+        //While executa o movimento para ESQUERDA somente depois de 2 movimentos oara BAIXO
+        int c = 1;
+        while (c <= casasEsquerda && i == casasBaixo)
+        {
+            printf("Esquerda\n");
+            c++;
+        }
+        
+    }
+    
+
     printf("\nMovimentos concluídos!\n");
     
     // Nível Aventureiro - Movimentação do Cavalo
